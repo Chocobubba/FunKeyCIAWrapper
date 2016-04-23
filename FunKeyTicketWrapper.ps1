@@ -10,9 +10,9 @@ If (Test-Path $BASEDIR\input.csv) {
 
 
 Write-Output "Testing for target folder..."
-If(!(Test-Path -Path "$BASEDIR\CIAs")) {
-    New-Item -ItemType directory -Path $BASEDIR\CIAs | Out-Null
-    Write-Output "Creating directory CIAs"
+If(!(Test-Path -Path "$BASEDIR\Tickets")) {
+    New-Item -ItemType directory -Path $BASEDIR\Tickets | Out-Null
+    Write-Output "Creating directory Tickets"
     } Else {
     Write-Output "Directory already exists"
     }
