@@ -19,12 +19,9 @@ If(!(Test-Path -Path "$BASEDIR\CIAs")) {
 
 Write-Output "`nProcessing `"input.csv`"..."
 foreach ($item in $CSV) {
-    Write-Output "Building CIA for $($item.Name)"
-    python FunKeyCIA.py -title $($item.TitleID) -key $($item.TitleKey)
-    Rename-Item $BASEDIR\cia\$($item.TitleID)\$($item.TitleID).cia -NewName "$($item.Name).cia"
-    Move-Item -Force $BASEDIR\cia\$($item.TitleID)\$($item.Name).cia $BASEDIR\CIAs
-    Remove-Item $BASEDIR\cia\$($item.TitleID)
-    Remove-Item -Recurse $BASEDIR\raw\$($item.TitleID)
+    Write-Output "Building Ticket for $($item.Name)"
+    python FunKeyCIA.py -ticketsonly -title $($item.TitleID) -key $($item.TitleKey)
+    Rename-Item $BASEDIR\Tickets\$($item.TitleID).tik -NewName "$($item.Name).tik"
     Write-Output `n
     }
 
