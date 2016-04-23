@@ -3,6 +3,8 @@
 
 *Also a fork of [FunKeyCIAWrapper](https://github.com/EyelaserNinjaPirate/FunKeyCIAWrapper)*
 
+*FunKeyTicketWrapper.py is a fork of [TheBaloneyBoy's FunKeyCiaWrapper, Python Edition](https://github.com/TheBaloneyboy/FunKeyCIAWrapper)*
+
 ## About
 I made this fork because I wanted a quick and easy way to download nothing but tickets in bulk. It also works on DLC tickets.
 
@@ -23,7 +25,11 @@ Checks 'input.csv' for a few basic errors:
 **FunKeyTicketWrapper.ps1**
 
 Iterates through 'input.csv', using FunKeyCIA to make tickets from the paired TitleID and encrypted TitleKey.
-It then renames the CIA from the TitleID to a user-specified name, relocates it into a central directory, then cleans up after FunKeyCIA.
+It then renames the Ticket from the TitleID to a user-specified name, relocates it into a central directory, then cleans up after FunKeyCIA.
+
+**FunKeyTicketWrapper.py**
+
+The same as the .ps1 version, but python 2.7 compatible. It produces errors I've yet to figure out how to remove, but it works properly. Note: input.csv must be in the same directory.
 
 **input.csv**
 
