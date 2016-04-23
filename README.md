@@ -1,5 +1,6 @@
 # FunKeyTicketWrapper
 *A simple wrapper for cearp's FunKeyCIA python script*
+
 *Also a fork of [FunKeyCIAWrapper](https://github.com/EyelaserNinjaPirate/FunKeyCIAWrapper)*
 
 ## About
@@ -10,7 +11,7 @@ This script requires Cearp's [FunKeyCIA](https://gbatemp.net/threads/release-fun
 If you can run `python FunKeyCIA.py -title <titleID here> -key <titleKey here>` then you're ready to go.
 
 ### The Files
-This project consists of two files: InputChecker.ps1 and FunKeyTicketWrapper.psi
+This project consists of two files: InputChecker.ps1 and FunKeyTicketWrapper.ps1
 Both files require a .csv file named 'input.csv' to be present in the same directory in which they are run.
 
 **InputChecker.ps1**
